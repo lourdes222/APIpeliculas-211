@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cine Lurcia - Cartelera</title>
+    <link rel="stylesheet" href="estilos.css">
+</head>
+<body>
+    <div class="mensajes" style="display:none;"></div>
+    
+    <h1>Cine Lurcia</h1>
+
+    <div class="acciones">
+        <button id="btn-agregar">Agregar Película</button>
+        <form id="form-buscar">
+            <input type="text" name="tituloBuscar" placeholder="Buscar por título...">
+            <select name="generoBuscar">
+                <option value="">Todos los géneros</option>
+                <option value="Comedia">Comedia</option>
+                <option value="Terror">Terror</option>
+                <option value="Ciencia Ficcion">Ciencia Ficción</option>
+                <option value="Aventura">Aventura</option>
+                <option value="Romance">Romance</option>
+                <option value="Infantil">Infantil</option>
+            </select>
+            <button type="submit">Buscar</button>
+            <button id="btn-filtros" type="button">Limpiar</button>
+        </form>
+    </div>
+    <form id="form-agregar" style="display: none;">
+        <div class="cerrar">
+            <button id="btn-cerrar-formAgregar">X</button>
+        </div>
+        <h3>Nueva Película</h3>
+        <input type="text" name="titulo" placeholder="Título Original" required>
+        <select name="genero" required style="margin: 10px 0; display: block; width: 100%; padding: 10px; background-color: #1a1a1a; color: white; border: 1px solid #2a2a2a; border-radius: 8px;">
+            <option value="" disabled selected>Seleccioná un género...</option>
+            <option value="Comedia">Comedia</option>
+            <option value="Terror">Terror</option>
+            <option value="Ciencia Ficcion">Ciencia Ficción</option>
+            <option value="Aventura">Aventura</option>
+            <option value="Romance">Romance</option>
+            <option value="Infantil">Infantil</option>
+        </select>
+        <input type="file" id="imagen" accept="image/*" style="margin: 10px 0; color: #fff; display: block;">
+        <button type="submit">Guardar en Cartelera</button>
+    </form>
+    <form id="form-modificar" style="display: none;"></form>
+    <hr>
+    <h2>Cartelera Actual</h2>
+    <div id="listadoPeliculas"></div>
+
+    <script src="js/mostrarMensaje.js"></script>
+    <script src="js/modulos.js"></script>
+    <script src="js/eventos.js"></script>
+</body>
+</html>

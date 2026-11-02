@@ -1,0 +1,306 @@
+body{
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    margin: 30px;
+    background-color: #121212;
+    color: #ffffff;
+}
+h1{
+    color: #ff1252;
+    font-size: 2.5rem;
+    text-shadow: 0 0 10px rgba(255, 18, 82, 0.3);
+    float: left;
+    margin: 0 30px 0 0;
+    line-height: 45px;
+}
+h2, h3{
+    color: #ff1252;
+    font-weight: 600;
+}
+hr{
+    clear: both;
+    border: 0;
+    height: 1px;
+    background: linear-gradient(to right, #ff1252, transparent);
+    margin: 30px 0;
+}
+.acciones{
+    display:flex;
+    justify-content: center;
+    gap: 15px;
+    align-items: center;
+    padding-top: 5px;
+}
+button, input[type="submit"]:hover{
+    background-color: #eee;
+}
+#btn-agregar{
+    background:linear-gradient(45deg, #df1921, #ff1252) ;
+    color: white;
+    border: none;
+}
+#btn-agregar:hover{
+    box-shadow: 0 0 15px rgba(255, 18, 82, 0.6);
+    background: linear-gradient(45deg, #ff1252, #df1921);
+}
+input[type="text"]{
+    background-color: #1e1e1e;
+    border: 2px solid #333;
+    color: #fff;
+    padding: 10px 20px;
+    border-radius: 30px;
+    font-size: 14px;
+    outline: none;
+    transition: all 0.3s ease;
+}
+input[type="text"]:focus{
+    border-color: #ff1252;
+    box-shadow: 0 0 8px rgba(255, 18, 82, 0.4);
+}
+button, input[type="submit"]{
+    padding: 10px 24px;
+    cursor: pointer;
+    border-radius: 30px;
+    border: none;
+    font-weight: bold;
+    font-size: 14px;
+    transition: all 0.3 ease;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.2);
+}
+button:active, input[type="submit"]:active{
+    transform: scale(0.96);
+}
+
+#form-modificar label{
+    display: block;
+    margin-bottom: 6px;
+    font-weight: bold;
+    color: #ff527b;
+}
+#form-modificar p{
+    margin-bottom: 15px;
+    font-size: 14px;
+    color: #ccc;
+}
+.cerrar{
+    text-align: right;
+}
+.btn-cerrar-formModif, #btn-cerrar-formAgregar{
+    background: none;
+    border: none;
+    color: #666;
+    font-size: 18px;
+    box-shadow: none;
+}
+.btn-cerrar-formModif :hover, #btn-cerrar-formAgregar:hover{
+    color: #ff1252;
+    background: none;
+}
+.pelicula{
+   display: flex;
+   flex-direction: column;
+   align-items: center;
+   text-align: center;
+   background-color: #1a1a1a;
+   border: 1px solid #2a2a2a;
+   border-top: 5px solid #ff1252;
+   border-radius: 12px;
+   padding: 20px;
+   margin: 0;
+   max-width: 320px;
+}
+.poster-pelicula{
+    width: 130px;
+    height: 180px;
+    object-fit: cover;
+    border-radius: 6px;
+    margin-right: 0;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.7);
+}
+.info{
+    margin-bottom: 15px;
+    width: 100%;
+}
+.info p{
+    margin: 6px 0;
+    font-size: 15px;
+}
+.info strong{
+    color: #ff527b;
+}
+.botones{
+    display: flex;
+    justify-content: center;
+    gap: 12px;
+    width: 100%;
+    margin-left: 0;
+}
+.btn-modificar{
+    background-color: #ff1252;
+    color: white;
+    border: 1px solid #ff1252;
+}
+.btn-modificar:hover{
+    background-color: #b91319;
+    color: white;
+}
+.btn-eliminar{
+    background-color: #ff1252;
+    color: white;
+    border: 1px solid #ff1252;
+}
+.btn-eliminar:hover{
+    background-color: #b91319;
+    box-shadow: 0 0 10px rgba(223, 25, 33, 0.5);
+}
+.mensajes{
+    background: linear-gradient(45deg, #ff1252, #df1921);
+    color: white;
+    padding: 14px 24px;
+    position: fixed;
+    top: 25px;
+    left: 50%;
+    transform: translateX(-50%);
+    z-index: 100;
+    border-radius: 30px;
+    box-shadow: 0 5px 20px rgba(255, 18, 82, 0.4);
+    font-weight: bold;
+}
+#form-buscar button[type="submit"]{
+    background-color: #1a1a1a;
+    color: #ffffff;
+    border: 2px solid #ff1252;
+}
+#form-buscar button[type="submit"]:hover{
+    background-color: #ff1252;
+    box-shadow: 0 0 10px rgba(255, 18, 82, 0.5);
+}
+#btn-filtros{
+    background-color: transparent;
+    color: #aaa;
+    border: 1px solid #444;
+}
+#btn-filtros:hover{
+    color: #fff;
+    background-color: #222;
+}
+#form-agregar, #form-modificar{
+    background-color: #1a1a1a;
+    border: 2px solid #ff1252;
+    padding: 25px;
+    margin: 20px 0;
+    border-radius: 16px;
+    max-width: 400px;
+    box-shadow: 0 10px 25px rgba(255, 18, 82, 0.2);
+}
+#form-agregar input[type="text"], #form-modificar input[type="text"]{
+    display: block;
+    width: 90%;
+    margin-bottom: 15px;
+}
+#form-agregar input[type="submit"], #form-modificar input[type="submit"]{
+    width: 100%;
+    background: linear-gradient(45deg, #ff1252, #df1921);
+    color: white;
+    font-size: 15px;
+}
+#imagen{
+    color: #b3b3b3;
+    font-size: 14px;
+    margin: 15px 0;
+    display: block;
+    cursor: pointer;
+}
+#imagen::file-selector-button{
+    background-color: #1a1a1a;
+    color: #ffffff;
+    border: 2px solid #ff1252;
+    padding: 8px 16px;
+    border-radius: 20px;
+    font-weight: bold;
+    cursor: pointer;
+    margin-right: 15px;
+    transition: all 0.3 ease;
+}
+#imagen::file-selector-button:hover{
+    background-color: #ff1252;
+    color: #ffffff;
+    box-shadow: 0 0 10px rgba(255, 18, 82, 0.6);
+}
+h2{
+    text-align: center;
+    margin-top: 40px;
+    margin-bottom: 25px;
+}
+#form-agregar{
+    margin: 30px auto !important;
+    float: none;
+}
+#form-modificar{
+    margin: 30px auto !important;
+    float: none;
+}
+#listadoPeliculas{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 20px;
+    padding: 20px;
+}
+select{
+    width: 100%;
+    padding: 10px;
+    margin: 10px 0;
+    background-color: #1a1a1a;
+    color: white;
+    border: 1px solid #2a2a2a;
+    border-radius: 20px;
+    outline: none;
+    font-family: inherit;
+    cursor: pointer;
+    appearance: none;
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    padding-right: 30px;
+}
+select option{
+    background-color: #1a1a1a;
+    color: white;
+    padding: 10px;
+}.btn-quitar-foto {
+    background-color: transparent;
+    color: #ff1252;
+    border: 1px solid #ff1252;
+    padding: 8px 12px;
+    border-radius: 20px;
+    font-weight: bold;
+    cursor: pointer;
+    margin: 10px 0;
+    transition: all 0.3s ease;
+    width: 100%;
+}
+.btn-quitar-foto:hover {
+    background-color: #ff1252;
+    color: #ffffff;
+    box-shadow: 0 0 10px rgba(255, 18, 82, 0.5);
+}
+#mod-imagen-file {
+    color: #ffffff;
+    padding: 6px;
+    margin-bottom: 10px;
+    width: 100%;
+}
+#mod-imagen-file::file-selector-button {
+    background-color: #222;
+    color: #ffffff;
+    border: 1px solid #ff1252;
+    padding: 6px 12px;
+    border-radius: 15px;
+    cursor: pointer;
+    margin-right: 10px;
+    transition: all 0.3s ease;
+}
+
+#mod-imagen-file::file-selector-button:hover {
+    background-color: #ff1252;
+    color: #ffffff;
+}
