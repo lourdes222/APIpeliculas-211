@@ -1,4 +1,4 @@
-const URL_API= '/peliculas'
+const URL_API= 'https://apipeliculas-211.onrender.com/peliculas'
 const subirImg = async (formData) => {
     try {
         const response = await fetch('https://api.imgbb.com/1/upload?key=1b20023a4df3cef1f51e6ab915712f1f', {
