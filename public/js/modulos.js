@@ -147,6 +147,7 @@ const mostrarFormModificar = (tituloActual, generoActual, id, imagenActual = '')
         <input type="submit" name="submit" value="Guardar Cambios">
     `;
     document.querySelector('#form-modificar').style.display = 'block';
+    document.querySelector('#form-modificar').scrollIntoView({ behavior: 'smooth', block: 'start' });
 }
 const modificarPelicula = (nuevosDatos) => {  
     const datosEditados = {
