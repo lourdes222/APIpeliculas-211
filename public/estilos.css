@@ -205,14 +205,17 @@ button:active, input[type="submit"]:active{
     background-color: #1a1a1a;
     border: 2px solid #ff1252;
     padding: 25px;
-    margin: 20px 0;
+    margin: 30px auto !important;
     border-radius: 16px;
     max-width: 400px;
+    width: 90%;
     box-shadow: 0 10px 25px rgba(255, 18, 82, 0.2);
+    float: none;
 }
 #form-agregar input[type="text"], #form-modificar input[type="text"]{
     display: block;
-    width: 90%;
+    width: 100%;
+    box-sizing: border-box;
     margin-bottom: 15px;
 }
 #form-agregar input[type="submit"], #form-modificar input[type="submit"]{
@@ -248,14 +251,6 @@ h2{
     text-align: center;
     margin-top: 40px;
     margin-bottom: 25px;
-}
-#form-agregar{
-    margin: 30px auto !important;
-    float: none;
-}
-#form-modificar{
-    margin: 30px auto !important;
-    float: none;
 }
 #listadoPeliculas{
     display: flex;
