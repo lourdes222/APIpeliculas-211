@@ -363,3 +363,13 @@ footer {
 footer p{
     margin: 0;
 }
+#form-agregar input[type="submit"], 
+#form-modificar input[type="submit"] {
+    background: linear-gradient(45deg, #ff1252, #df1921) !important;
+    color: white !important;
+}
+#form-agregar input[type="submit"]:hover, 
+#form-modificar input[type="submit"]:hover {
+    background: linear-gradient(45deg, #df1921, #ff1252) !important;
+    box-shadow: 0 0 15px rgba(255, 18, 82, 0.6);
+}
