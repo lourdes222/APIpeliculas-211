@@ -322,7 +322,7 @@ select option{
     background-color: #ff1252;
     color: #ffffff;
 }
-@media(max-width: 900px){
+@media(max-width: 700px){
     body{
         margin: 15px;
     }
